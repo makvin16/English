@@ -14,3 +14,9 @@ dependencyResolutionManagement {
 }
 rootProject.name = "English"
 include ':app'
+include ':core'
+include ':start_ui'
+include ':domain'
+include ':data'
+include ':mode_ui'
+include ':game_ui'

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center">
+
+    <Button
+        android:id="@+id/btn_eng_to_rus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/eng_to_rus"/>
+
+    <Button
+        android:id="@+id/btn_rus_to_eng"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/rus_to_eng"/>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

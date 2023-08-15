@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- start -->
+    <string name="btn_play">Play</string>
+    <string name="btn_choice_all">Choice all</string>
+    <!-- mode -->
+    <string name="eng_to_rus">Eng -> Rus</string>
+    <string name="rus_to_eng">Rus -> Eng</string>
+</resources>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/app_nav_graph"
+    app:startDestination="@id/start">
+
+    <fragment
+        android:id="@+id/start"
+        android:name="com.zm.englishtraining.start_ui.StartFragment"
+        android:label="StartFragment"
+        tools:layout="@layout/fragment_start">
+        <action
+            android:id="@+id/action_start_to_mode"
+            app:destination="@id/mode" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/mode"
+        android:name="com.zm.englishtraining.mode_ui.ModeFragment"
+        android:label="ModeFragment"
+        tools:layout="@layout/fragment_mode">
+        <action
+            android:id="@+id/action_mode_to_game"
+            app:destination="@id/game"
+            app:popUpTo="@id/mode"
+            app:popUpToInclusive="true"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/game"
+        android:name="com.zm.englishtraining.game.GameFragment"
+        android:label="GameFragment"
+        tools:layout="@layout/fragment_game"/>
+
+</navigation>

@@ -1,0 +1,20 @@
+[
+  {
+    "type" : "type1",
+    "english" : [
+      "word1", "word2"
+    ],
+    "russian" : [
+      "word1", "word2"
+    ]
+  },
+  {
+    "type" : "type2",
+    "english" : [
+      "word1", "word2"
+    ],
+    "russian" : [
+      "word1", "word2"
+    ]
+  }
+]
