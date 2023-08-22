@@ -4,16 +4,21 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Space
 import android.widget.Toast
+import androidx.constraintlayout.widget.Group
+import androidx.core.view.children
+import androidx.core.view.isVisible
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.Observer
 import androidx.viewbinding.ViewBinding
+import com.zm.englishtraining.core.model.EmptyUi
 import com.zm.englishtraining.core.navigator.Navigation
 import com.zm.englishtraining.core.navigator.NavigatorProvider
 
 abstract class BaseFragment<B : ViewBinding, N : Navigation> : Fragment(), IBaseFragment,
-    View.OnClickListener {
+    IBaseFragment.Events, View.OnClickListener {
 
     abstract fun initBinding(
         inflater: LayoutInflater,
@@ -77,4 +82,19 @@ abstract class BaseFragment<B : ViewBinding, N : Navigation> : Fragment(), IBase
             }
         })
     }
+
+    protected fun ViewGroup.visibilitiesExcept(
+        isVisible: Boolean,
+        vararg exceptIds: View
+    ) {
+        children.forEach { view ->
+            if (view !is Space && view !is Group && exceptIds.contains(view).not()) {
+                view.isVisible = isVisible
+            }
+        }
+    }
+
+    override fun onShowLoading(empty: EmptyUi) = Unit
+
+    override fun onHideLoading(empty: EmptyUi) = Unit
 }

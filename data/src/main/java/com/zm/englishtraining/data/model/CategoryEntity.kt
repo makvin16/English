@@ -2,11 +2,12 @@ package com.zm.englishtraining.data.model
 
 import androidx.room.Entity
 import androidx.room.PrimaryKey
+import androidx.room.Room
 import com.zm.englishtraining.domain.model.Category
 
 @Entity(tableName = "categories")
 data class CategoryEntity(
-    @PrimaryKey(autoGenerate = true) val id: Long,
+    @PrimaryKey(autoGenerate = true) val id: Long = 0,
     val name: String
 ) {
 

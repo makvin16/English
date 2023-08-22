@@ -1,7 +1,6 @@
 package com.zm.englishtraining.data
 
 import com.zm.englishtraining.data.model.CategoryEntity.Companion.toDomain
-import com.zm.englishtraining.data.model.CategoryEntity.Companion.toDto
 import com.zm.englishtraining.domain.Repository
 import com.zm.englishtraining.domain.model.Category
 
@@ -13,7 +12,7 @@ class RepositoryImpl(
         return cacheDataSource.fetchCategories().map { it.toDomain() }
     }
 
-    override suspend fun insertCategory(category: Category) {
-        cacheDataSource.insertCategory(category.toDto())
+    override suspend fun insertData() {
+        cacheDataSource.insertData()
     }
 }

@@ -1,0 +1,26 @@
+{
+  "name" : "Present Simple",
+  "phrases" : [
+    {
+      "content" : "present simple phrase1",
+      "translates" : [
+        "present simple phrase1 t1",
+        "present simple phrase1 t2"
+      ]
+    },
+    {
+      "content" : "present simple phrase2",
+      "translates" : [
+        "present simple phrase2 t1",
+        "present simple phrase2 t2"
+      ]
+    },
+    {
+      "content" : "present simple phrase3",
+      "translates" : [
+        "present simple phrase3 t1",
+        "present simple phrase3 t2"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "name" : "Past Simple",
+  "phrases" : [
+    {
+      "content" : "past simple phrase1",
+      "translates" : [
+        "past simple phrase1 t1",
+        "past simple phrase1 t2"
+      ]
+    },
+    {
+      "content" : "past simple phrase2",
+      "translates" : [
+        "past simple phrase2 t1",
+        "past simple phrase2 t2"
+      ]
+    },
+    {
+      "content" : "past simple phrase3",
+      "translates" : [
+        "past simple phrase3 t1",
+        "past simple phrase3 t2"
+      ]
+    }
+  ]
+}

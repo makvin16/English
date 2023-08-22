@@ -6,6 +6,6 @@ interface Repository {
 
     suspend fun fetchCategories(): List<Category>
 
-    suspend fun insertCategory(category: Category)
+    suspend fun insertData()
 
 }

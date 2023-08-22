@@ -2,10 +2,11 @@ package com.zm.englishtraining.start_ui
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
-import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
+import com.zm.englishtraining.core.base.BaseViewModel
+import com.zm.englishtraining.core.model.EmptyUi
 import com.zm.englishtraining.domain.GetCategories
-import com.zm.englishtraining.domain.InsertCategory
+import com.zm.englishtraining.domain.InsertData
 import com.zm.englishtraining.domain.model.Category
 import com.zm.englishtraining.start_ui.model.CategoryUi
 import com.zm.englishtraining.start_ui.model.CategoryUi.Companion.toUi
@@ -14,20 +15,23 @@ import kotlinx.coroutines.launch
 
 class StartViewModel(
     private val getCategories: GetCategories,
-    private val insertCategories: InsertCategory
-) : ViewModel() {
+    private val insertData: InsertData
+) : BaseViewModel() {
 
     private val _categories = MutableLiveData<List<CategoryUi>>()
     val categories: LiveData<List<CategoryUi>> = _categories
 
     init {
+        showProgress.value = EmptyUi
         viewModelScope.launch(Dispatchers.IO) {
             var categories = getCategories().map { it.toUi() }
+            insertData()
             if (categories.isEmpty()) {
-                insertCategories(Category(1, "Present Simple"))
+                insertData()
             }
             categories = getCategories().map { it.toUi() }
             _categories.postValue(categories)
+            hideProgress.postValue(EmptyUi)
         }
     }
 

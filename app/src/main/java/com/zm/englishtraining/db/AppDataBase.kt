@@ -2,14 +2,19 @@ package com.zm.englishtraining.db
 
 import androidx.room.Database
 import androidx.room.RoomDatabase
-import com.zm.englishtraining.data.CategoriesDao
+import com.zm.englishtraining.data.dao.CategoriesDao
+import com.zm.englishtraining.data.dao.PhrasesDao
+import com.zm.englishtraining.data.dao.TranslatesDao
 import com.zm.englishtraining.data.model.CategoryEntity
-import com.zm.englishtraining.data.model.LanguageEntity
+import com.zm.englishtraining.data.model.PhraseEntity
+import com.zm.englishtraining.data.model.TranslateEntity
 
 @Database(
     version = 1,
-    entities = [CategoryEntity::class, LanguageEntity.English::class, LanguageEntity.Russian::class]
+    entities = [CategoryEntity::class, PhraseEntity::class, TranslateEntity::class]
 )
 abstract class AppDataBase : RoomDatabase() {
-    abstract fun phrasesDao(): CategoriesDao
+    abstract fun categoriesDao(): CategoriesDao
+    abstract fun phrasesDao(): PhrasesDao
+    abstract fun translatesDao(): TranslatesDao
 }

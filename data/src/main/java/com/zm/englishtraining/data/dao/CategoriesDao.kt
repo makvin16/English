@@ -1,7 +1,6 @@
-package com.zm.englishtraining.data
+package com.zm.englishtraining.data.dao
 
 import androidx.room.Dao
-import androidx.room.Delete
 import androidx.room.Insert
 import androidx.room.Query
 import com.zm.englishtraining.data.model.CategoryEntity
@@ -13,8 +12,8 @@ interface CategoriesDao {
     fun getCategories(): List<CategoryEntity>
 
     @Insert(entity = CategoryEntity::class)
-    fun insertCategory(category: CategoryEntity)
+    fun insertCategory(category: CategoryEntity): Long
 
-    @Delete(entity = CategoryEntity::class)
-    fun delete()
+    @Query("DELETE FROM categories")
+    fun deleteAllCategories()
 }

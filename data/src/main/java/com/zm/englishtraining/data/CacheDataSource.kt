@@ -6,7 +6,7 @@ interface CacheDataSource {
 
     suspend fun fetchCategories(): List<CategoryEntity>
 
-    suspend fun insertCategory(category: CategoryEntity)
+    suspend fun insertData()
 
     suspend fun deleteAllCategories()
 }
