@@ -36,9 +36,9 @@ class ModeFragment : BaseFragment<FragmentModeBinding, ModeNavigation>(), IModeF
     companion object {
         private const val ARG_TOPIC_IDS = "topicIds"
 
-        fun makeArgs(ids: IntArray): Bundle {
+        fun makeArgs(ids: LongArray): Bundle {
             return Bundle(1).apply {
-                putIntArray(ARG_TOPIC_IDS, ids)
+//                putIntArray(ARG_TOPIC_IDS, ids)
             }
 
         }

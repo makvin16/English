@@ -1,8 +1,11 @@
 package com.zm.englishtraining.domain
 
-import com.zm.englishtraining.domain.model.Topic
+import com.zm.englishtraining.domain.model.Category
 
 interface Repository {
 
-    fun fetchTopics(): List<Topic>
+    suspend fun fetchCategories(): List<Category>
+
+    suspend fun insertCategory(category: Category)
+
 }

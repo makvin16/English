@@ -1,16 +1,24 @@
 package com.zm.englishtraining.data
 
-import com.zm.englishtraining.data.model.TopicDto
+import android.content.SharedPreferences
+import com.zm.englishtraining.data.model.CategoryEntity
 
-class CacheDataSourceImpl : CacheDataSource {
+class CacheDataSourceImpl(
+    private val sharedPreferences: SharedPreferences,
+    private val categoriesDao: CategoriesDao
+) : CacheDataSource {
 
-    override fun fetchTopics(): List<TopicDto> {
-        return listOf(
-            TopicDto(1, "name1"),
-            TopicDto(2, "name2"),
-            TopicDto(3, "name3"),
-            TopicDto(4, "name4"),
-            TopicDto(5, "name5"),
-        )
+    override suspend fun fetchCategories(): List<CategoryEntity> {
+        return categoriesDao.getCategories()
     }
+
+    override suspend fun insertCategory(category: CategoryEntity) {
+        categoriesDao.insertCategory(category)
+    }
+
+    override suspend fun deleteAllCategories() {
+        categoriesDao.delete()
+    }
+
+
 }

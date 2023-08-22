@@ -2,14 +2,14 @@ package com.zm.englishtraining.start_ui.fingerprints
 
 import android.content.Context
 import com.zm.englishtraining.core.recycler.BaseViewHolder
-import com.zm.englishtraining.start_ui.databinding.ItemTopicBinding
-import com.zm.englishtraining.start_ui.model.TopicUi
+import com.zm.englishtraining.start_ui.databinding.ItemCategoryBinding
+import com.zm.englishtraining.start_ui.model.CategoryUi
 
-class TopicViewHolder(
+class CategoryViewHolder(
     context: Context,
-    binding: ItemTopicBinding,
-    onClickTopic: (TopicUi) -> Unit
-) : BaseViewHolder<TopicUi, ItemTopicBinding>(context, binding) {
+    binding: ItemCategoryBinding,
+    onClickTopic: (CategoryUi) -> Unit
+) : BaseViewHolder<CategoryUi, ItemCategoryBinding>(context, binding) {
 
     init {
         binding.root.setOnClickListener {
@@ -17,7 +17,7 @@ class TopicViewHolder(
         }
     }
 
-    override fun onBind(item: TopicUi) = with(binding) {
+    override fun onBind(item: CategoryUi) = with(binding) {
         super.onBind(item)
         textView.text = item.name
         checkbox.isChecked = item.isChoose

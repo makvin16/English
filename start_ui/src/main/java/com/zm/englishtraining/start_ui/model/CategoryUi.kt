@@ -1,18 +1,18 @@
 package com.zm.englishtraining.start_ui.model
 
 import com.zm.englishtraining.core.model.Ui
-import com.zm.englishtraining.domain.model.Topic
+import com.zm.englishtraining.domain.model.Category
 
-data class TopicUi(
-    val id: Int,
+data class CategoryUi(
+    val id: Long,
     val name: String,
     val isChoose: Boolean = false
 ) : Ui {
 
     companion object {
 
-        fun Topic.toUi(): TopicUi = with(this) {
-            return TopicUi(
+        fun Category.toUi(): CategoryUi = with(this) {
+            return CategoryUi(
                 id = id,
                 name = name
             )

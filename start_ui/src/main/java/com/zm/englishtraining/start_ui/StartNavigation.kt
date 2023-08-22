@@ -4,5 +4,5 @@ import com.zm.englishtraining.core.navigator.Navigation
 
 interface StartNavigation : Navigation {
 
-    fun navigateToMode(topicIds: IntArray)
+    fun navigateToMode(topicIds: LongArray)
 }

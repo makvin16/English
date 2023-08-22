@@ -12,8 +12,8 @@ import com.zm.englishtraining.core.recycler.FingerprintAdapter
 import com.zm.englishtraining.core.viewmodel.GenericSavedStateViewModelFactory
 import com.zm.englishtraining.core.viewmodel.ViewModelAssistedFactory
 import com.zm.englishtraining.start_ui.databinding.FragmentStartBinding
-import com.zm.englishtraining.start_ui.fingerprints.TopicFingerprint
-import com.zm.englishtraining.start_ui.model.TopicUi
+import com.zm.englishtraining.start_ui.fingerprints.CategoryFingerprint
+import com.zm.englishtraining.start_ui.model.CategoryUi
 
 class StartFragment : BaseFragment<FragmentStartBinding, StartNavigation>() {
 
@@ -36,12 +36,12 @@ class StartFragment : BaseFragment<FragmentStartBinding, StartNavigation>() {
 
     override fun onViewCreated(): Unit = with(binding) {
         setupClickListener(btnChoiceAll, btnPlay)
-        val topicFingerprint = TopicFingerprint(
+        val categoryFingerprint = CategoryFingerprint(
             requireContext(),
-            R.layout.item_topic,
+            R.layout.item_category,
             ::onClickTopic
         )
-        adapter = FingerprintAdapter(listOf(topicFingerprint))
+        adapter = FingerprintAdapter(listOf(categoryFingerprint))
         recyclerViewTopics.setupRecyclerView(
             adapter = adapter,
             layoutManager = LinearLayoutManager(context),
@@ -51,7 +51,7 @@ class StartFragment : BaseFragment<FragmentStartBinding, StartNavigation>() {
     }
 
     override fun onInitObservers() {
-        observe(viewModel.topics) {
+        observe(viewModel.categories) {
             adapter?.submitList(it)
         }
     }
@@ -72,13 +72,13 @@ class StartFragment : BaseFragment<FragmentStartBinding, StartNavigation>() {
     }
 
     private fun onClickPlay() {
-        val ids = viewModel.topics.value
+        val ids = viewModel.categories.value
             ?.filter { it.isChoose }
-            ?.map { it.id }?.toIntArray() ?: intArrayOf()
+            ?.map { it.id }?.toLongArray() ?: longArrayOf()
         navigation.navigateToMode(ids)
     }
 
-    private fun onClickTopic(topic: TopicUi) {
+    private fun onClickTopic(topic: CategoryUi) {
         viewModel.onClickTopic(topic)
     }
 }

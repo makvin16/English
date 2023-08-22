@@ -7,23 +7,23 @@ import androidx.recyclerview.widget.DiffUtil
 import com.zm.englishtraining.core.model.Ui
 import com.zm.englishtraining.core.recycler.BaseFingerprint
 import com.zm.englishtraining.core.recycler.BaseViewHolder
-import com.zm.englishtraining.start_ui.databinding.ItemTopicBinding
-import com.zm.englishtraining.start_ui.model.TopicUi
+import com.zm.englishtraining.start_ui.databinding.ItemCategoryBinding
+import com.zm.englishtraining.start_ui.model.CategoryUi
 
-class TopicFingerprint(
+class CategoryFingerprint(
     context: Context,
     containerId: Int,
-    private val onClickTopic: (TopicUi) -> Unit
-) : BaseFingerprint<TopicUi, ItemTopicBinding>(context, containerId) {
+    private val onClickTopic: (CategoryUi) -> Unit
+) : BaseFingerprint<CategoryUi, ItemCategoryBinding>(context, containerId) {
 
-    override fun isRelativeItem(item: Ui) = (item is TopicUi)
+    override fun isRelativeItem(item: Ui) = (item is CategoryUi)
 
     override fun getViewHolder(
         layoutInflater: LayoutInflater,
         parent: ViewGroup
-    ): BaseViewHolder<TopicUi, ItemTopicBinding> {
-        val binding = ItemTopicBinding.inflate(layoutInflater, parent, false)
-        return TopicViewHolder(
+    ): BaseViewHolder<CategoryUi, ItemCategoryBinding> {
+        val binding = ItemCategoryBinding.inflate(layoutInflater, parent, false)
+        return CategoryViewHolder(
             context = context,
             binding = binding,
             onClickTopic = onClickTopic
@@ -32,18 +32,18 @@ class TopicFingerprint(
 
     override fun getDiffUtil() = diffUtil
 
-    private val diffUtil = object : DiffUtil.ItemCallback<TopicUi>() {
+    private val diffUtil = object : DiffUtil.ItemCallback<CategoryUi>() {
 
         override fun areItemsTheSame(
-            oldItem: TopicUi,
-            newItem: TopicUi
+            oldItem: CategoryUi,
+            newItem: CategoryUi
         ): Boolean {
             return oldItem.id == newItem.id
         }
 
         override fun areContentsTheSame(
-            oldItem: TopicUi,
-            newItem: TopicUi
+            oldItem: CategoryUi,
+            newItem: CategoryUi
         ): Boolean {
             return oldItem == newItem
         }
