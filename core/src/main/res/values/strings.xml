@@ -10,4 +10,7 @@
     <!-- game -->
     <string name="btn_answer">Confirm</string>
     <string name="next">Next</string>
+    <string name="exit_title">Do you really want to leave</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
 </resources>

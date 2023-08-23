@@ -5,6 +5,8 @@ import android.os.Build
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.ViewGroup
+import androidx.activity.addCallback
+import androidx.appcompat.app.AlertDialog
 import androidx.core.view.isVisible
 import androidx.fragment.app.viewModels
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -57,7 +59,7 @@ class GameFragment : BaseFragment<FragmentGameBinding, GameNavigation>(), IGameF
         super.onAttach(context)
     }
 
-    override fun onViewCreated() = with(binding) {
+    override fun onViewCreated(): Unit = with(binding) {
         val phraseFingerprint = PhraseFingerprint(
             context = requireContext(),
             containerId = R.layout.item_phrase,
@@ -72,6 +74,9 @@ class GameFragment : BaseFragment<FragmentGameBinding, GameNavigation>(), IGameF
         )
         recyclerView.itemAnimator = null
         snapHelper.attachToRecyclerView(recyclerView)
+        requireActivity().onBackPressedDispatcher.addCallback(viewLifecycleOwner) {
+            showAlertDialogExitFromGame()
+        }
     }
 
     override fun onInitObservers() = with(viewModel) {
@@ -119,6 +124,18 @@ class GameFragment : BaseFragment<FragmentGameBinding, GameNavigation>(), IGameF
 
     override fun onScroll(pos: Int) {
         binding.recyclerView.scrollToPosition(pos)
+    }
+
+    private fun showAlertDialogExitFromGame() {
+        val alertDialog = AlertDialog.Builder(requireContext())
+            .setTitle(getString(com.zm.englishtraining.core_ui.R.string.exit_title))
+            .setPositiveButton(getString(com.zm.englishtraining.core_ui.R.string.yes)) { _, _ ->
+                navigation.navigateBack()
+            }
+            .setNegativeButton(getString(com.zm.englishtraining.core_ui.R.string.no)) { _, _ -> }
+            .create()
+
+        alertDialog.show()
     }
 
     companion object {
