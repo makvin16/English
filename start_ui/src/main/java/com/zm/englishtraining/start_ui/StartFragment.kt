@@ -37,11 +37,11 @@ class StartFragment : BaseFragment<FragmentStartBinding, StartNavigation>(), ISt
     }
 
     override fun onViewCreated(): Unit = with(binding) {
-        setupClickListener(btnChoiceAll, btnPlay)
+        setupClickListener(btnChoiceAll, btnPlay, imageViewUpdate)
         val categoryFingerprint = CategoryFingerprint(
             requireContext(),
             R.layout.item_category,
-            ::onClickTopic
+            ::onClickCategory
         )
         adapter = FingerprintAdapter(listOf(categoryFingerprint))
         recyclerViewTopics.setupRecyclerView(
@@ -53,9 +53,9 @@ class StartFragment : BaseFragment<FragmentStartBinding, StartNavigation>(), ISt
     }
 
     override fun onInitObservers() = with(viewModel) {
-        observe(categories, ::onUpdateCategories)
         observe(eventShowProgress, ::onShowLoading)
         observe(eventHideProgress, ::onHideLoading)
+        observe(categories, ::onUpdateCategories)
     }
 
     override fun onClick(v: View?) = with(binding) {
@@ -65,6 +65,9 @@ class StartFragment : BaseFragment<FragmentStartBinding, StartNavigation>(), ISt
             }
             btnPlay.id -> {
                 onClickPlay()
+            }
+            imageViewUpdate.id -> {
+                onClickUpdate()
             }
         }
     }
@@ -77,11 +80,19 @@ class StartFragment : BaseFragment<FragmentStartBinding, StartNavigation>(), ISt
         val ids = viewModel.categories.value
             ?.filter { it.isChoose }
             ?.map { it.id }?.toLongArray() ?: longArrayOf()
-        navigation.navigateToMode(ids)
+        if (ids.isNotEmpty()) {
+            navigation.navigateToMode(ids)
+        } else {
+            showToast(com.zm.englishtraining.core_ui.R.string.play_error)
+        }
     }
 
-    private fun onClickTopic(topic: CategoryUi) {
-        viewModel.onClickTopic(topic)
+    private fun onClickUpdate() {
+        viewModel.onClickUpdate()
+    }
+
+    private fun onClickCategory(topic: CategoryUi) {
+        viewModel.onClickCategory(topic)
     }
 
     override fun onShowLoading(empty: EmptyUi) = with(binding) {

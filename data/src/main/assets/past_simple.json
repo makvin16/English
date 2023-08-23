@@ -2,24 +2,23 @@
   "name" : "Past Simple",
   "phrases" : [
     {
-      "content" : "past simple phrase1",
+      "content" : "I was there",
       "translates" : [
-        "past simple phrase1 t1",
-        "past simple phrase1 t2"
+        "Я был там"
       ]
     },
     {
-      "content" : "past simple phrase2",
+      "content" : "He did it yesterday",
       "translates" : [
-        "past simple phrase2 t1",
-        "past simple phrase2 t2"
+        "Он делал это вчера"
       ]
     },
     {
-      "content" : "past simple phrase3",
+      "content" : "We played football yesterday",
       "translates" : [
-        "past simple phrase3 t1",
-        "past simple phrase3 t2"
+        "Мы вчера играли в футбол",
+        "Мы играли в футбол вчера",
+        "Вчера мы играли в футбол"
       ]
     }
   ]

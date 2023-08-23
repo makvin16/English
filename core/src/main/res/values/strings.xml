@@ -3,7 +3,11 @@
     <!-- start -->
     <string name="btn_play">Play</string>
     <string name="btn_choice_all">Choice all</string>
+    <string name="play_error">Should choice at least one category</string>
     <!-- mode -->
     <string name="eng_to_rus">Eng -> Rus</string>
     <string name="rus_to_eng">Rus -> Eng</string>
+    <!-- game -->
+    <string name="btn_answer">Confirm</string>
+    <string name="next">Next</string>
 </resources>

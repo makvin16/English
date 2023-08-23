@@ -2,24 +2,22 @@
   "name" : "Present Simple",
   "phrases" : [
     {
-      "content" : "present simple phrase1",
+      "content" : "I go to school every day",
       "translates" : [
-        "present simple phrase1 t1",
-        "present simple phrase1 t2"
+        "Я хожу в школу каждый день",
+        "Каждый день я хожу в школу"
       ]
     },
     {
-      "content" : "present simple phrase2",
+      "content" : "He has lunch at 7 o'clock",
       "translates" : [
-        "present simple phrase2 t1",
-        "present simple phrase2 t2"
+        "Он обедает в 7 часов"
       ]
     },
     {
-      "content" : "present simple phrase3",
+      "content" : "She loves him",
       "translates" : [
-        "present simple phrase3 t1",
-        "present simple phrase3 t2"
+        "Она любит его"
       ]
     }
   ]

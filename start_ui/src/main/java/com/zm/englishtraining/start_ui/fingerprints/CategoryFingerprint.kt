@@ -13,7 +13,7 @@ import com.zm.englishtraining.start_ui.model.CategoryUi
 class CategoryFingerprint(
     context: Context,
     containerId: Int,
-    private val onClickTopic: (CategoryUi) -> Unit
+    private val onClickCategory: (CategoryUi) -> Unit
 ) : BaseFingerprint<CategoryUi, ItemCategoryBinding>(context, containerId) {
 
     override fun isRelativeItem(item: Ui) = (item is CategoryUi)
@@ -26,7 +26,7 @@ class CategoryFingerprint(
         return CategoryViewHolder(
             context = context,
             binding = binding,
-            onClickTopic = onClickTopic
+            onClickCategory = onClickCategory
         )
     }
 

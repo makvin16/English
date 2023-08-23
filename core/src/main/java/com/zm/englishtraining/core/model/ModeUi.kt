@@ -1,8 +1,13 @@
 package com.zm.englishtraining.core.model
 
-sealed class ModeUi : Ui {
+import android.os.Parcelable
+import kotlinx.parcelize.Parcelize
 
+sealed class ModeUi : Ui, Parcelable {
+
+    @Parcelize
     object EnglishToRussian : ModeUi()
 
+    @Parcelize
     object RussianToEnglish : ModeUi()
 }

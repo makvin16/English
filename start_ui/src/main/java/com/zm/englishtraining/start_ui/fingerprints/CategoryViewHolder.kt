@@ -8,12 +8,12 @@ import com.zm.englishtraining.start_ui.model.CategoryUi
 class CategoryViewHolder(
     context: Context,
     binding: ItemCategoryBinding,
-    onClickTopic: (CategoryUi) -> Unit
+    onClickCategory: (CategoryUi) -> Unit
 ) : BaseViewHolder<CategoryUi, ItemCategoryBinding>(context, binding) {
 
     init {
         binding.root.setOnClickListener {
-            item?.let(onClickTopic)
+            item?.let(onClickCategory)
         }
     }
 
