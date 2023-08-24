@@ -1,25 +1,269 @@
 {
   "name" : "Past Simple",
-  "phrases" : [
+  "phrases": [
     {
-      "content" : "I was there",
-      "translates" : [
-        "Я был там"
-      ]
+      "content": "I went to work yesterday.",
+      "translates": ["Я пошел на работу вчера."]
     },
     {
-      "content" : "He did it yesterday",
-      "translates" : [
-        "Он делал это вчера"
-      ]
+      "content": "She read a book last night.",
+      "translates": ["Она прочитала книгу прошлой ночью."]
     },
     {
-      "content" : "We played football yesterday",
-      "translates" : [
-        "Мы вчера играли в футбол",
-        "Мы играли в футбол вчера",
-        "Вчера мы играли в футбол"
-      ]
+      "content": "He didn't like the movie.",
+      "translates": ["Ему не понравился фильм."]
+    },
+    {
+      "content": "They visited their grandparents last weekend.",
+      "translates": ["Они навестили своих бабушку и дедушку прошлым уикендом."]
+    },
+    {
+      "content": "Did you play soccer yesterday?",
+      "translates": ["Ты играл в футбол вчера?"]
+    },
+    {
+      "content": "Did she study French at school?",
+      "translates": ["Она учила французский в школе?"]
+    },
+    {
+      "content": "Didn't you like the concert?",
+      "translates": ["Тебе не понравился концерт?"]
+    },
+    {
+      "content": "Did he go to the gym last week?",
+      "translates": ["Он ходил в спортзал на прошлой неделе?"]
+    },
+    {
+      "content": "We had a great time at the party.",
+      "translates": ["Мы хорошо провели время на вечеринке."]
+    },
+    {
+      "content": "She didn't enjoy the movie.",
+      "translates": ["Ей не понравился фильм."]
+    },
+    {
+      "content": "Did your brother play the piano?",
+      "translates": ["Твой брат играл на пианино?"]
+    },
+    {
+      "content": "They traveled to Europe last summer.",
+      "translates": ["Они путешествовали в Европу прошлым летом."]
+    },
+    {
+      "content": "He didn't work on Saturday.",
+      "translates": ["Он не работал в субботу."]
+    },
+    {
+      "content": "Did they live in this city?",
+      "translates": ["Они жили в этом городе?"]
+    },
+    {
+      "content": "She painted a beautiful picture.",
+      "translates": ["Она нарисовала красивую картину."]
+    },
+    {
+      "content": "Didn't he like the restaurant?",
+      "translates": ["Ему не понравился ресторан?"]
+    },
+    {
+      "content": "We played basketball yesterday.",
+      "translates": ["Мы играли в баскетбол вчера."]
+    },
+    {
+      "content": "She usually took the bus to work.",
+      "translates": ["Она обычно ездила на работу на автобусе."]
+    },
+    {
+      "content": "He went to the gym three times last week.",
+      "translates": ["Он ходил в спортзал три раза на прошлой неделе."]
+    },
+    {
+      "content": "They lived in a small town.",
+      "translates": ["Они жили в маленьком городе."]
+    },
+    {
+      "content": "Did you enjoy the concert?",
+      "translates": ["Тебе понравился концерт?"]
+    },
+    {
+      "content": "Did she work on Sunday?",
+      "translates": ["Она работала в воскресенье?"]
+    },
+    {
+      "content": "She didn't eat sushi.",
+      "translates": ["Она не ела суши."]
+    },
+    {
+      "content": "He played the guitar at the party.",
+      "translates": ["Он играл на гитаре на вечеринке."]
+    },
+    {
+      "content": "We watched a new movie.",
+      "translates": ["Мы посмотрели новый фильм."]
+    },
+    {
+      "content": "Did she like the gift?",
+      "translates": ["Ей понравился подарок?"]
+    },
+    {
+      "content": "He often visited his grandparents.",
+      "translates": ["Он часто навещал своих бабушку и дедушку."]
+    },
+    {
+      "content": "Did they speak Spanish?",
+      "translates": ["Они говорили по-испански?"]
+    },
+    {
+      "content": "She worked as a teacher.",
+      "translates": ["Она работала учительницей."]
+    },
+    {
+      "content": "He didn't drink coffee yesterday.",
+      "translates": ["Он не пил кофе вчера."]
+    },
+    {
+      "content": "We often went to the park.",
+      "translates": ["Мы часто ходили в парк."]
+    },
+    {
+      "content": "Did she play tennis?",
+      "translates": ["Она играла в теннис?"]
+    },
+    {
+      "content": "He studied engineering at university.",
+      "translates": ["Он изучал инженерию в университете."]
+    },
+    {
+      "content": "We visited our grandparents last month.",
+      "translates": ["Мы навестили наших бабушку и дедушку прошлым месяцем."]
+    },
+    {
+      "content": "She didn't watch TV yesterday.",
+      "translates": ["Она не смотрела телевизор вчера."]
+    },
+    {
+      "content": "Did he often go to concerts?",
+      "translates": ["Он часто ходил на концерты?"]
+    },
+    {
+      "content": "They lived in a big house.",
+      "translates": ["Они жили в большом доме."]
+    },
+    {
+      "content": "Did she like to dance?",
+      "translates": ["Ей нравилось танцевать?"]
+    },
+    {
+      "content": "He worked in IT.",
+      "translates": ["Он работал в области информационных технологий."]
+    },
+    {
+      "content": "We traveled to a tropical island last year.",
+      "translates": ["Мы путешествовали на тропический остров прошлым годом."]
+    },
+    {
+      "content": "Did she teach math at school?",
+      "translates": ["Она преподавала математику в школе?"]
+    },
+    {
+      "content": "He didn't like the weather.",
+      "translates": ["Ему не понравилась погода."]
+    },
+    {
+      "content": "We often went hiking in the mountains.",
+      "translates": ["Мы часто ходили в походы в горы."]
+    },
+    {
+      "content": "Did you have a pet dog?",
+      "translates": ["У тебя была домашняя собака?"]
+    },
+    {
+      "content": "She worked as a nurse.",
+      "translates": ["Она работала медсестрой."]
+    },
+    {
+      "content": "He didn't wake up early.",
+      "translates": ["Он не проснулся рано."]
+    },
+    {
+      "content": "We often visited new restaurants.",
+      "translates": ["Мы часто навещали новые рестораны."]
+    },
+    {
+      "content": "Did she swim in the lake?",
+      "translates": ["Она плавала в озере?"]
+    },
+    {
+      "content": "He worked in a hospital.",
+      "translates": ["Он работал в больнице."]
+    },
+    {
+      "content": "We celebrated our anniversary last week.",
+      "translates": ["Мы отметили нашу годовщину на прошлой неделе."]
+    },
+    {
+      "content": "Did she know how to dance?",
+      "translates": ["Она умела танцевать?"]
+    },
+    {
+      "content": "He didn't like the movie.",
+      "translates": ["Ему не понравился фильм."]
+    },
+    {
+      "content": "We visited art galleries in the city.",
+      "translates": ["Мы посещали художественные галереи в городе."]
+    },
+    {
+      "content": "Did she work late hours?",
+      "translates": ["Она работала допоздна?"]
+    },
+    {
+      "content": "He didn't watch reality shows.",
+      "translates": ["Он не смотрел реалити-шоу."]
+    },
+    {
+      "content": "We enjoyed the concert.",
+      "translates": ["Нам понравился концерт."]
+    },
+    {
+      "content": "Did she travel to Asia?",
+      "translates": ["Она путешествовала в Азию?"]
+    },
+    {
+      "content": "He didn't eat dessert.",
+      "translates": ["Он не ел десерт."]
+    },
+    {
+      "content": "We often visited the museum.",
+      "translates": ["Мы часто посещали музей."]
+    },
+    {
+      "content": "Did she like to ski?",
+      "translates": ["Ей нравилось кататься на лыжах?"]
+    },
+    {
+      "content": "He didn't attend the conference.",
+      "translates": ["Он не посещал конференцию."]
+    },
+    {
+      "content": "We traveled to different countries.",
+      "translates": ["Мы путешествовали в разные страны."]
+    },
+    {
+      "content": "Did she work as a chef?",
+      "translates": ["Она работала поваром?"]
+    },
+    {
+      "content": "He didn't watch TV.",
+      "translates": ["Он не смотрел телевизор."]
+    },
+    {
+      "content": "We visited our friends last night.",
+      "translates": ["Мы навестили наших друзей прошлой ночью."]
+    },
+    {
+      "content": "Did she play basketball?",
+      "translates": ["Она играла в баскетбол?"]
     }
   ]
 }

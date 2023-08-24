@@ -1,0 +1,269 @@
+{
+  "name" : "Future Simple",
+  "phrases": [
+    {
+      "content": "I will go to work tomorrow.",
+      "translates": ["Я пойду на работу завтра."]
+    },
+    {
+      "content": "She will read a book tonight.",
+      "translates": ["Она прочитает книгу сегодня вечером."]
+    },
+    {
+      "content": "He will watch a movie this weekend.",
+      "translates": ["Он посмотрит фильм на этот уикенд."]
+    },
+    {
+      "content": "They will visit their grandparents next month.",
+      "translates": ["Они навестят своих бабушку и дедушку следующим месяцем."]
+    },
+    {
+      "content": "Will you play soccer next week?",
+      "translates": ["Ты будешь играть в футбол на следующей неделе?"]
+    },
+    {
+      "content": "Will she study French in the future?",
+      "translates": ["Она будет изучать французский в будущем?"]
+    },
+    {
+      "content": "They won't like the new restaurant.",
+      "translates": ["Им не понравится новый ресторан."]
+    },
+    {
+      "content": "Will he go to the gym tomorrow?",
+      "translates": ["Он пойдет в спортзал завтра?"]
+    },
+    {
+      "content": "We will have a party next Saturday.",
+      "translates": ["Мы устроим вечеринку на следующую субботу."]
+    },
+    {
+      "content": "She won't enjoy the movie.",
+      "translates": ["Ей не понравится фильм."]
+    },
+    {
+      "content": "Will your brother play the piano?",
+      "translates": ["Твой брат будет играть на пианино?"]
+    },
+    {
+      "content": "They will travel to Europe next summer.",
+      "translates": ["Они отправятся в путешествие в Европу следующим летом."]
+    },
+    {
+      "content": "He won't work on Sunday.",
+      "translates": ["Он не будет работать в воскресенье."]
+    },
+    {
+      "content": "Will they live in this city?",
+      "translates": ["Они будут жить в этом городе?"]
+    },
+    {
+      "content": "She will paint a beautiful picture.",
+      "translates": ["Она нарисует красивую картину."]
+    },
+    {
+      "content": "Will he like the concert?",
+      "translates": ["Ему понравится концерт?"]
+    },
+    {
+      "content": "We will play basketball on Friday.",
+      "translates": ["Мы будем играть в баскетбол в пятницу."]
+    },
+    {
+      "content": "She will take the bus to work tomorrow.",
+      "translates": ["Она поедет на работу на автобусе завтра."]
+    },
+    {
+      "content": "He will go to the gym more often in the future.",
+      "translates": ["Он будет ходить в спортзал чаще в будущем."]
+    },
+    {
+      "content": "They will move to a bigger house.",
+      "translates": ["Они переедут в более большой дом."]
+    },
+    {
+      "content": "Will you enjoy the concert?",
+      "translates": ["Тебе понравится концерт?"]
+    },
+    {
+      "content": "Will she work on Monday?",
+      "translates": ["Она будет работать в понедельник?"]
+    },
+    {
+      "content": "She won't eat sushi.",
+      "translates": ["Она не будет есть суши."]
+    },
+    {
+      "content": "He will play the guitar at the party.",
+      "translates": ["Он будет играть на гитаре на вечеринке."]
+    },
+    {
+      "content": "We will watch a new movie soon.",
+      "translates": ["Мы скоро посмотрим новый фильм."]
+    },
+    {
+      "content": "Will she like the gift?",
+      "translates": ["Ей понравится подарок?"]
+    },
+    {
+      "content": "He will often visit his grandparents.",
+      "translates": ["Он будет часто навещать своих бабушку и дедушку."]
+    },
+    {
+      "content": "Will they learn a new language?",
+      "translates": ["Они будут изучать новый язык?"]
+    },
+    {
+      "content": "She will work as a teacher.",
+      "translates": ["Она будет работать учительницей."]
+    },
+    {
+      "content": "He won't drink coffee tomorrow.",
+      "translates": ["Он не будет пить кофе завтра."]
+    },
+    {
+      "content": "We will often go to the park.",
+      "translates": ["Мы будем часто ходить в парк."]
+    },
+    {
+      "content": "Will she play tennis?",
+      "translates": ["Она будет играть в теннис?"]
+    },
+    {
+      "content": "He will study engineering at university.",
+      "translates": ["Он будет изучать инженерию в университете."]
+    },
+    {
+      "content": "We will visit our grandparents next week.",
+      "translates": ["Мы навестим наших бабушку и дедушку на следующей неделе."]
+    },
+    {
+      "content": "She won't watch TV tomorrow.",
+      "translates": ["Она не будет смотреть телевизор завтра."]
+    },
+    {
+      "content": "Will he often go to concerts?",
+      "translates": ["Он будет часто ходить на концерты?"]
+    },
+    {
+      "content": "They will live in a big house.",
+      "translates": ["Они будут жить в большом доме."]
+    },
+    {
+      "content": "Will she like to dance?",
+      "translates": ["Ей будет нравиться танцевать?"]
+    },
+    {
+      "content": "He will work in IT.",
+      "translates": ["Он будет работать в области информационных технологий."]
+    },
+    {
+      "content": "We will travel to a tropical island next year.",
+      "translates": ["Мы отправимся в путешествие на тропический остров следующим годом."]
+    },
+    {
+      "content": "She won't teach math at school.",
+      "translates": ["Она не будет преподавать математику в школе."]
+    },
+    {
+      "content": "Will he like the weather?",
+      "translates": ["Ему понравится погода?"]
+    },
+    {
+      "content": "We will often go hiking in the mountains.",
+      "translates": ["Мы будем часто ходить в походы в горы."]
+    },
+    {
+      "content": "Will you have a pet dog in the future?",
+      "translates": ["У тебя будет домашняя собака в будущем?"]
+    },
+    {
+      "content": "She will work as a nurse.",
+      "translates": ["Она будет работать медсестрой."]
+    },
+    {
+      "content": "He won't wake up early tomorrow.",
+      "translates": ["Он не проснется рано завтра."]
+    },
+    {
+      "content": "We will often visit new restaurants.",
+      "translates": ["Мы будем часто навещать новые рестораны."]
+    },
+    {
+      "content": "Will she swim in the lake?",
+      "translates": ["Она будет плавать в озере?"]
+    },
+    {
+      "content": "He will work in a hospital.",
+      "translates": ["Он будет работать в больнице."]
+    },
+    {
+      "content": "We will celebrate our anniversary next month.",
+      "translates": ["Мы будем отмечать нашу годовщину следующим месяцем."]
+    },
+    {
+      "content": "Will she know how to dance?",
+      "translates": ["Она будет уметь танцевать?"]
+    },
+    {
+      "content": "He won't like the movie.",
+      "translates": ["Ему не понравится фильм."]
+    },
+    {
+      "content": "We will visit art galleries in the city.",
+      "translates": ["Мы будем посещать художественные галереи в городе."]
+    },
+    {
+      "content": "Will she work late hours?",
+      "translates": ["Она будет работать допоздна?"]
+    },
+    {
+      "content": "He won't watch reality shows.",
+      "translates": ["Он не будет смотреть реалити-шоу."]
+    },
+    {
+      "content": "We will enjoy the concert.",
+      "translates": ["Мы будем наслаждаться концертом."]
+    },
+    {
+      "content": "Will she travel to Asia?",
+      "translates": ["Она отправится в путешествие в Азию?"]
+    },
+    {
+      "content": "He won't eat dessert.",
+      "translates": ["Он не будет есть десерт."]
+    },
+    {
+      "content": "We will often visit the museum.",
+      "translates": ["Мы будем часто посещать музей."]
+    },
+    {
+      "content": "Will she like to ski?",
+      "translates": ["Ей будет нравиться кататься на лыжах?"]
+    },
+    {
+      "content": "He won't attend the conference.",
+      "translates": ["Он не будет посещать конференцию."]
+    },
+    {
+      "content": "We will travel to different countries.",
+      "translates": ["Мы будем путешествовать в разные страны."]
+    },
+    {
+      "content": "Will she work as a chef?",
+      "translates": ["Она будет работать поваром?"]
+    },
+    {
+      "content": "He won't watch TV.",
+      "translates": ["Он не будет смотреть телевизор."]
+    },
+    {
+      "content": "We will visit our friends next week.",
+      "translates": ["Мы навестим наших друзей на следующей неделе."]
+    },
+    {
+      "content": "Will she play basketball?",
+      "translates": ["Она будет играть в баскетбол?"]
+    }
+  ]
+}

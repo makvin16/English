@@ -111,14 +111,19 @@ class GameFragment : BaseFragment<FragmentGameBinding, GameNavigation>(), IGameF
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.CUPCAKE) {
             hideKeyboard()
         }
-        viewModel.onClickConfirm(answer) { isCorrect, correctAnswer ->
+        viewModel.onClickConfirm(answer) { isCorrect, correctAnswer, actualAnswer ->
             childFragmentManager.setFragmentResultListener(
                 ResultDialogFragment.REQUEST_KEY, viewLifecycleOwner
             ) { requestKey, _ ->
                 childFragmentManager.clearFragmentResult(requestKey)
                 viewModel.onNextQuestion()
             }
-            ResultDialogFragment.show(childFragmentManager, isCorrect, correctAnswer)
+            ResultDialogFragment.show(
+                fragmentManager = childFragmentManager,
+                isCorrect = isCorrect,
+                correctAnswer = correctAnswer,
+                actualAnswer = actualAnswer
+            )
         }
     }
 

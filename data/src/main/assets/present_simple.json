@@ -1,24 +1,497 @@
 {
   "name" : "Present Simple",
-  "phrases" : [
+  "phrases": [
     {
-      "content" : "I go to school every day",
-      "translates" : [
-        "Я хожу в школу каждый день",
-        "Каждый день я хожу в школу"
-      ]
+      "content": "I go to work every day.",
+      "translates": ["Я хожу на работу каждый день."]
     },
     {
-      "content" : "He has lunch at 7 o'clock",
-      "translates" : [
-        "Он обедает в 7 часов"
-      ]
+      "content": "She loves to read books.",
+      "translates": ["Она любит читать книги."]
     },
     {
-      "content" : "She loves him",
-      "translates" : [
-        "Она любит его"
-      ]
+      "content": "He doesn't like spicy food.",
+      "translates": ["Ему не нравится острое питание."]
+    },
+    {
+      "content": "They don't watch TV.",
+      "translates": ["Они не смотрят телевизор."]
+    },
+    {
+      "content": "Do you play basketball on weekends?",
+      "translates": ["Ты играешь в баскетбол по выходным?"]
+    },
+    {
+      "content": "Does she study English at school?",
+      "translates": ["Она учит английский в школе?"]
+    },
+    {
+      "content": "Don't you enjoy swimming?",
+      "translates": ["Разве тебе не нравится плавание?"]
+    },
+    {
+      "content": "Doesn't he go to the gym three times a week?",
+      "translates": ["Разве он не ходит в спортзал три раза в неделю?"]
+    },
+    {
+      "content": "We have a meeting tomorrow.",
+      "translates": ["У нас завтра встреча."]
+    },
+    {
+      "content": "She doesn't enjoy cooking.",
+      "translates": ["Ей не нравится готовить."]
+    },
+    {
+      "content": "Does your brother play the piano?",
+      "translates": ["Твой брат играет на пианино?"]
+    },
+    {
+      "content": "They usually travel during the holidays.",
+      "translates": ["Они обычно путешествуют во время каникул."]
+    },
+    {
+      "content": "He doesn't work on weekends.",
+      "translates": ["Он не работает по выходным."]
+    },
+    {
+      "content": "Do they live in the city center?",
+      "translates": ["Они живут в центре города?"]
+    },
+    {
+      "content": "She enjoys painting in her free time.",
+      "translates": ["Она любит рисовать в свободное время."]
+    },
+    {
+      "content": "Doesn't he like horror movies?",
+      "translates": ["Разве ему не нравятся фильмы ужасов?"]
+    },
+    {
+      "content": "We play soccer every Saturday.",
+      "translates": ["Мы играем в футбол каждую субботу."]
+    },
+    {
+      "content": "She usually takes the bus to work.",
+      "translates": ["Она обычно ездит на работу на автобусе."]
+    },
+    {
+      "content": "He goes to the gym three times a week.",
+      "translates": ["Он ходит в спортзал три раза в неделю."]
+    },
+    {
+      "content": "They live in a big house.",
+      "translates": ["Они живут в большом доме."]
+    },
+    {
+      "content": "Do you like to travel?",
+      "translates": ["Тебе нравится путешествовать?"]
+    },
+    {
+      "content": "Does she work on weekends?",
+      "translates": ["Она работает по выходным?"]
+    },
+    {
+      "content": "She doesn't eat meat.",
+      "translates": ["Она не ест мясо."]
+    },
+    {
+      "content": "He enjoys playing the guitar.",
+      "translates": ["Ему нравится играть на гитаре."]
+    },
+    {
+      "content": "We usually watch movies on Fridays.",
+      "translates": ["Мы обычно смотрим фильмы по пятницам."]
+    },
+    {
+      "content": "Doesn't she like swimming?",
+      "translates": ["Разве ей не нравится плавание?"]
+    },
+    {
+      "content": "He often visits his parents.",
+      "translates": ["Он часто навещает своих родителей."]
+    },
+    {
+      "content": "Do they speak Spanish?",
+      "translates": ["Они говорят по-испански?"]
+    },
+    {
+      "content": "She works as a nurse.",
+      "translates": ["Она работает медсестрой."]
+    },
+    {
+      "content": "He doesn't like to wake up early.",
+      "translates": ["Ему не нравится рано вставать."]
+    },
+    {
+      "content": "We often go hiking on weekends.",
+      "translates": ["Мы часто ходим в походы по выходным."]
+    },
+    {
+      "content": "Do you have a pet dog?",
+      "translates": ["У тебя есть собака?"]
+    },
+    {
+      "content": "She teaches math at the university.",
+      "translates": ["Она преподает математику в университете."]
+    },
+    {
+      "content": "He doesn't drink coffee in the evening.",
+      "translates": ["Он не пьет кофе вечером."]
+    },
+    {
+      "content": "They often go to the beach in the summer.",
+      "translates": ["Они часто ездят на пляж летом."]
+    },
+    {
+      "content": "Does she play the piano?",
+      "translates": ["Она играет на пианино?"]
+    },
+    {
+      "content": "He works from home.",
+      "translates": ["Он работает из дома."]
+    },
+    {
+      "content": "Do you enjoy cooking?",
+      "translates": ["Тебе нравится готовить?"]
+    },
+    {
+      "content": "She doesn't watch TV in the morning.",
+      "translates": ["Она не смотрит телевизор утром."]
+    },
+    {
+      "content": "He often goes to concerts.",
+      "translates": ["Он часто ходит на концерты."]
+    },
+    {
+      "content": "They live in a small apartment.",
+      "translates": ["Они живут в небольшой квартире."]
+    },
+    {
+      "content": "Does she like to dance?",
+      "translates": ["Ей нравится танцевать?"]
+    },
+    {
+      "content": "He studies French at school.",
+      "translates": ["Он учит французский в школе."]
+    },
+    {
+      "content": "We often visit our grandparents.",
+      "translates": ["Мы часто навещаем наших бабушку и дедушку."]
+    },
+    {
+      "content": "She doesn't play video games.",
+      "translates": ["Она не играет в видеоигры."]
+    },
+    {
+      "content": "He works in a hospital.",
+      "translates": ["Он работает в больнице."]
+    },
+    {
+      "content": "Do you like to read?",
+      "translates": ["Тебе нравится читать?"]
+    },
+    {
+      "content": "Does she go to the gym?",
+      "translates": ["Она ходит в спортзал?"]
+    },
+    {
+      "content": "She doesn't eat fast food.",
+      "translates": ["Она не ест фастфуд."]
+    },
+    {
+      "content": "He watches documentaries about nature.",
+      "translates": ["Он смотрит документальные фильмы о природе."]
+    },
+    {
+      "content": "They don't have any pets.",
+      "translates": ["У них нет домашних животных."]
+    },
+    {
+      "content": "Do you work on Saturdays?",
+      "translates": ["Ты работаешь в субботу?"]
+    },
+    {
+      "content": "Does she live in a big city?",
+      "translates": ["Она живет в большом городе?"]
+    },
+    {
+      "content": "He doesn't drink alcohol.",
+      "translates": ["Он не пьет алкоголь."]
+    },
+    {
+      "content": "We always celebrate birthdays with a party.",
+      "translates": ["Мы всегда празднуем дни рождения вечеринкой."]
+    },
+    {
+      "content": "She usually goes shopping on weekends.",
+      "translates": ["Она обычно ходит по магазинам по выходным."]
+    },
+    {
+      "content": "Do you know how to swim?",
+      "translates": ["Ты умеешь плавать?"]
+    },
+    {
+      "content": "Does she work as a teacher?",
+      "translates": ["Она работает учительницей?"]
+    },
+    {
+      "content": "He doesn't watch romantic movies.",
+      "translates": ["Он не смотрит романтические фильмы."]
+    },
+    {
+      "content": "They eat dinner at 7 PM.",
+      "translates": ["Они ужинают в 7 вечера."]
+    },
+    {
+      "content": "Do you like to hike in the mountains?",
+      "translates": ["Тебе нравится ходить в походы в горы?"]
+    },
+    {
+      "content": "Does she play any musical instruments?",
+      "translates": ["Она играет на каких-либо музыкальных инструментах?"]
+    },
+    {
+      "content": "She doesn't watch TV shows.",
+      "translates": ["Она не смотрит телешоу."]
+    },
+    {
+      "content": "He works in IT.",
+      "translates": ["Он работает в области информационных технологий."]
+    },
+    {
+      "content": "We travel to new places every year.",
+      "translates": ["Мы путешествуем в новые места каждый год."]
+    },
+    {
+      "content": "Does she like to go to the cinema?",
+      "translates": ["Ей нравится ходить в кино?"]
+    },
+    {
+      "content": "He doesn't eat sweets.",
+      "translates": ["Он не ест сладкое."]
+    },
+    {
+      "content": "They visit their relatives during holidays.",
+      "translates": ["Они навещают своих родственников во время каникул."]
+    },
+    {
+      "content": "Do you work out at the gym?",
+      "translates": ["Ты тренируешься в спортзале?"]
+    },
+    {
+      "content": "Does she have any pets?",
+      "translates": ["У нее есть домашние животные?"]
+    },
+    {
+      "content": "He doesn't like crowded places.",
+      "translates": ["Ему не нравятся переполненные места."]
+    },
+    {
+      "content": "We usually go for a walk after dinner.",
+      "translates": ["Мы обычно идем на прогулку после ужина."]
+    },
+    {
+      "content": "Does she enjoy playing sports?",
+      "translates": ["Ей нравится заниматься спортом?"]
+    },
+    {
+      "content": "He doesn't use social media.",
+      "translates": ["Он не пользуется социальными сетями."]
+    },
+    {
+      "content": "They often visit art galleries.",
+      "translates": ["Они часто посещают художественные галереи."]
+    },
+    {
+      "content": "Do you have a garden?",
+      "translates": ["У тебя есть сад?"]
+    },
+    {
+      "content": "Does she work late hours?",
+      "translates": ["Она работает допоздна?"]
+    },
+    {
+      "content": "He doesn't watch reality shows.",
+      "translates": ["Он не смотрит реалити-шоу."]
+    },
+    {
+      "content": "We enjoy spending time outdoors.",
+      "translates": ["Нам нравится проводить время на улице."]
+    },
+    {
+      "content": "Does she like to travel by train?",
+      "translates": ["Ей нравится путешествовать на поезде?"]
+    },
+    {
+      "content": "He doesn't eat dairy products.",
+      "translates": ["Он не ест молочные продукты."]
+    },
+    {
+      "content": "They often go to live concerts.",
+      "translates": ["Они часто ходят на живые концерты."]
+    },
+    {
+      "content": "Do you play any musical instruments?",
+      "translates": ["Ты играешь на каких-либо музыкальных инструментах?"]
+    },
+    {
+      "content": "Does she live near the park?",
+      "translates": ["Она живет около парка?"]
+    },
+    {
+      "content": "He doesn't like to stay up late.",
+      "translates": ["Ему не нравится засиживаться до поздна."]
+    },
+    {
+      "content": "We visit our grandparents every month.",
+      "translates": ["Мы навещаем своих бабушку и дедушку каждый месяц."]
+    },
+    {
+      "content": "Does she enjoy painting?",
+      "translates": ["Ей нравится рисовать?"]
+    },
+    {
+      "content": "He doesn't watch horror movies.",
+      "translates": ["Он не смотрит фильмы ужасов."]
+    },
+    {
+      "content": "They spend their weekends at the beach.",
+      "translates": ["Они проводят выходные на пляже."]
+    },
+    {
+      "content": "Do you like to cook?",
+      "translates": ["Тебе нравится готовить?"]
+    },
+    {
+      "content": "Does she work from home?",
+      "translates": ["Она работает из дома?"]
+    },
+    {
+      "content": "He doesn't enjoy reading.",
+      "translates": ["Ему не нравится читать."]
+    },
+    {
+      "content": "We often visit new restaurants.",
+      "translates": ["Мы часто посещаем новые рестораны."]
+    },
+    {
+      "content": "Does she go to the gym regularly?",
+      "translates": ["Она ходит в спортзал регулярно?"]
+    },
+    {
+      "content": "He doesn't play video games.",
+      "translates": ["Он не играет в видеоигры."]
+    },
+    {
+      "content": "They usually eat breakfast at home.",
+      "translates": ["Они обычно завтракают дома."]
+    },
+    {
+      "content": "Do you have a favorite book?",
+      "translates": ["У тебя есть любимая книга?"]
+    },
+    {
+      "content": "Does she work in an office?",
+      "translates": ["Она работает в офисе?"]
+    },
+    {
+      "content": "He doesn't drink coffee.",
+      "translates": ["Он не пьет кофе."]
+    },
+    {
+      "content": "We often go to the park in the evenings.",
+      "translates": ["Мы часто ходим в парк по вечерам."]
+    },
+    {
+      "content": "Does she enjoy hiking?",
+      "translates": ["Ей нравится ходить в походы?"]
+    },
+    {
+      "content": "He doesn't watch TV shows.",
+      "translates": ["Он не смотрит телешоу."]
+    },
+    {
+      "content": "They visit their family during holidays.",
+      "translates": ["Они навещают свою семью во время каникул."]
+    },
+    {
+      "content": "Do you work on Sundays?",
+      "translates": ["Ты работаешь в воскресенье?"]
+    },
+    {
+      "content": "Does she like to swim?",
+      "translates": ["Ей нравится плавать?"]
+    },
+    {
+      "content": "He doesn't eat fast food.",
+      "translates": ["Он не ест фастфуд."]
+    },
+    {
+      "content": "We go to the theater occasionally.",
+      "translates": ["Мы иногда ходим в театр."]
+    },
+    {
+      "content": "Does she play any sports?",
+      "translates": ["Она занимается какими-либо видами спорта?"]
+    },
+    {
+      "content": "He doesn't drink soda.",
+      "translates": ["Он не пьет газировку."]
+    },
+    {
+      "content": "They usually have lunch at noon.",
+      "translates": ["Они обычно обедают в полдень."]
+    },
+    {
+      "content": "Do you like to travel?",
+      "translates": ["Тебе нравится путешествовать?"]
+    },
+    {
+      "content": "Does she work on Saturdays?",
+      "translates": ["Она работает в субботу?"]
+    },
+    {
+      "content": "He doesn't enjoy going to parties.",
+      "translates": ["Ему не нравится ходить на вечеринки."]
+    },
+    {
+      "content": "We often go to the mountains in the winter.",
+      "translates": ["Мы часто ездим в горы зимой."]
+    },
+    {
+      "content": "Does she play a musical instrument?",
+      "translates": ["Она играет на музыкальном инструменте?"]
+    },
+    {
+      "content": "He doesn't eat meat.",
+      "translates": ["Он не ест мясо."]
+    },
+    {
+      "content": "They visit their friends on weekends.",
+      "translates": ["Они навещают своих друзей по выходным."]
+    },
+    {
+      "content": "Do you have a pet?",
+      "translates": ["У тебя есть домашнее животное?"]
+    },
+    {
+      "content": "Does she work in a hospital?",
+      "translates": ["Она работает в больнице?"]
+    },
+    {
+      "content": "He doesn't drink alcohol.",
+      "translates": ["Он не пьет алкоголь."]
+    },
+    {
+      "content": "We often go for a bike ride in the evenings.",
+      "translates": ["Мы часто ездим на велосипеде по вечерам."]
+    },
+    {
+      "content": "Does she like to read novels?",
+      "translates": ["Ей нравится читать романы?"]
+    },
+    {
+      "content": "He doesn't watch reality shows.",
+      "translates": ["Он не смотрит реалити-шоу."]
     }
   ]
 }

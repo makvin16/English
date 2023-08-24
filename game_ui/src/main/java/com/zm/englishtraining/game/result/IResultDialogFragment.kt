@@ -5,4 +5,6 @@ interface IResultDialogFragment {
     val argIsCorrect: Boolean
 
     val argCorrectAnswer: String
+
+    val argActualAnswer: String
 }

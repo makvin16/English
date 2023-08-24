@@ -43,7 +43,7 @@ class GameViewModel(
                 }
                 val level = getLevelByPhrase(question)
                 mapPhrase(it, level)
-            }
+            }.sortedBy { it.level.value }
             log("$phrases")
             _phrases.postValue(phrases)
             hideProgress.postValue(EmptyUi)
@@ -71,7 +71,7 @@ class GameViewModel(
         _phrases.postValue(newPhrases)
     }
 
-    fun onClickConfirm(answer: String, result: (Boolean, String) -> Unit) {
+    fun onClickConfirm(answer: String, result: (Boolean, String, String) -> Unit) {
         val currentPhrase = phrases.value?.get(currentPosition) ?: return
         log("old: $answer")
         val answerFilter = answer.lowercase().trim().filter {
@@ -87,7 +87,7 @@ class GameViewModel(
             log("correct: $correctAnswerFilter $isCorrect")
         }
         log("new: $answerFilter")
-        result.invoke(isCorrect, currentPhrase.answers.toString())
+        result.invoke(isCorrect, currentPhrase.answers.toString(), answer)
         if (isCorrect && currentPhrase.isAnswerVisible.not()) {
             viewModelScope.launch(Dispatchers.IO) {
                 correctAnswer(currentPhrase.question, currentPhrase.level.levelUp().value)

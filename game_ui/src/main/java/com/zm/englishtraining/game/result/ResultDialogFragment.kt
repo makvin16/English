@@ -18,6 +18,9 @@ class ResultDialogFragment : BaseDialogFragment<DialogFragmentResultBinding>(),
     override val argCorrectAnswer: String
         get() = arguments?.getString(ARG_CORRECT_ANSWER) ?: error("correct answer")
 
+    override val argActualAnswer: String
+        get() = arguments?.getString(ARG_ACTUAL_ANSWER) ?: error("actual answer")
+
     override fun initBinding(
         inflater: LayoutInflater,
         container: ViewGroup?
@@ -35,6 +38,7 @@ class ResultDialogFragment : BaseDialogFragment<DialogFragmentResultBinding>(),
         }
         imageView.setImageResource(image)
         textViewCorrectAnswer.text = argCorrectAnswer
+        textViewActualAnswer.text = argActualAnswer
         btnNext.setOnClickListener {
             parentFragmentManager.setFragmentResult(REQUEST_KEY, bundleOf())
             dismiss()
@@ -48,14 +52,21 @@ class ResultDialogFragment : BaseDialogFragment<DialogFragmentResultBinding>(),
         private val TAG = ResultDialogFragment::class.java.simpleName
         private const val ARG_IS_CORRECT = "isCorrect"
         private const val ARG_CORRECT_ANSWER = "correctAnswer"
+        private const val ARG_ACTUAL_ANSWER = "actualAnswer"
 
-        fun show(fragmentManager: FragmentManager, isCorrect: Boolean, correctAnswer: String) {
+        fun show(
+            fragmentManager: FragmentManager,
+            isCorrect: Boolean,
+            correctAnswer: String,
+            actualAnswer: String
+        ) {
             if (fragmentManager.findFragmentByTag(TAG) != null) return
             val resultDialogFragment = ResultDialogFragment()
             resultDialogFragment.isCancelable = false
             resultDialogFragment.arguments = Bundle(2).apply {
                 putBoolean(ARG_IS_CORRECT, isCorrect)
                 putString(ARG_CORRECT_ANSWER, correctAnswer)
+                putString(ARG_ACTUAL_ANSWER, actualAnswer)
             }
             resultDialogFragment.show(fragmentManager, TAG)
         }
